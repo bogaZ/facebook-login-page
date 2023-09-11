@@ -3,8 +3,8 @@ body {
 }
 
 .mid-container {
-    height: 100vh;
     font-family: inherit;
+    height: 630px;
 }
 
 .link-forget-account {
