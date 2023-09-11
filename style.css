@@ -7,6 +7,23 @@ body {
     height: 630px;
 }
 
+.input-password{
+    padding-right: 45px;
+}
+
+
+.button-password{
+    display: none;
+    color: rgb(102, 102, 102);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.button-password:hover{
+    background-color: rgba(134, 133, 197, 0.137);
+}
+
 .link-forget-account {
     color: #1877f2;
     font-size: 14px;
