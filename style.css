@@ -11,6 +11,33 @@ body {
     padding-right: 45px;
 }
 
+.text-content-register{
+    text-decoration: none;
+}
+
+.text-content-register:hover{
+    text-decoration: underline;
+}
+
+.my-label{
+    font-size: 12px;
+}
+
+.icon-question{
+    font-size: 12px;
+}
+
+.gender:hover{
+    cursor: pointer;
+}
+
+.gender label:hover{
+    cursor: pointer;
+}
+
+.form-check-input:hover{
+    cursor: pointer;
+}
 
 .button-password{
     display: none;
@@ -85,11 +112,11 @@ body {
 }
 
 .my-form-control{
-    background-color: rgba(128, 128, 128, 0.055);
+    background-color: rgb(247, 247, 247)
 }
 
 .my-form-control:focus{
-    background-color: rgba(128, 128, 128, 0.055);
+    background-color: rgb(247, 247, 247)
 }
 
 

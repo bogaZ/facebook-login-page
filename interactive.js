@@ -89,3 +89,4 @@ password.addEventListener("blur", (event) => {
         password.classList.remove("is-invalid")
     }
 })
+
