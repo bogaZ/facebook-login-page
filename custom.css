@@ -2473,7 +2473,7 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='30' height='30' fill='%23be4b49' stroke='white'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath  d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='white' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: calc(1em + 0.400rem) calc(1em + 0.400rem); }
+  background-size: calc(1.10em + 0.401rem) calc(1.10em + 0.401rem); }
   .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
     border-color: var(--bs-form-invalid-border-color);
     box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25); }
