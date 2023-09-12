@@ -116,7 +116,13 @@ body {
 }
 
 .my-form-control{
-    background-color: rgb(247, 247, 247)
+    background-color: rgb(247, 247, 247);
+    font-size: 14px;
+    
+}
+
+.my-form-select{
+    font-size: 14px;
 }
 
 .my-form-control:focus{
@@ -153,8 +159,13 @@ body {
     }
 }
 
+
 .gender-label-2{
     display: none;
+}
+
+.form-opsional{
+    font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -184,6 +195,9 @@ body {
     }
     .label-khusus{
         font-size: 12px;
+    }
+    .form-opsional{
+        font-size: 11px;
     }
     
 }

@@ -90,3 +90,77 @@ password.addEventListener("blur", (event) => {
     }
 })
 
+
+// Interactive Opsional Gender
+const khusus = document.getElementById("khusus");
+const pria = document.getElementById('pria')
+const perempuan = document.getElementById('perempuan')
+const opsional = document.getElementById('opsional');
+
+function toggleOpsional() {
+    if (khusus.checked) {
+        opsional.style.display = 'block'
+    } else if (pria.checked) {
+        opsional.style.display = 'none'
+    } else if (perempuan.checked) {
+        opsional.style.display = 'none'
+    } else {
+        opsional.style.display = 'none'
+    }
+}
+
+khusus.addEventListener("change", toggleOpsional);
+pria.addEventListener("change", toggleOpsional);
+perempuan.addEventListener("change", toggleOpsional);
+
+// Dropdown tanggal lahir
+var tangalLahir = document.getElementById('tanggal-lahir')
+var today = new Date();
+var selectedDate = today.getDate();
+
+for (var a = 1; a <= 31; a++) {
+    var newOption = document.createElement("option"); // Membuat elemen <option> baru di setiap iterasi
+    newOption.value = a;
+    newOption.textContent = a;
+    tangalLahir.appendChild(newOption);
+    if (a === selectedDate) {
+        newOption.selected = true
+    }
+}
+
+// Dropdown Bulan Lahir
+var thisMonth = today.getMonth()
+var monthNamesShort = [
+    "Jan", "Feb", "Mar", "Apr", "Mei", "Jun",
+    "Jul", "Agu", "Sep", "Okt", "Nov", "Des"
+];
+var bulanLahir = document.getElementById('bulan-lahir')
+
+for (var a = 1; a <= 12; a++) {
+    var newOption = document.createElement("option")
+    newOption.value = a
+    newOption.textContent = monthNamesShort[a - 1]
+    bulanLahir.appendChild(newOption)
+    if (a === (thisMonth + 1)) {
+        newOption.selected = true
+    }
+}
+
+// Dropdown Tahun Lahir
+var thisYear = today.getFullYear()
+var tahunLahir = document.getElementById('tahun-lahir')
+
+for (var a = 1905; a <= 2023; a++) {
+    var newOption = document.createElement("option")
+    newOption.value = a
+    newOption.textContent = a
+    tahunLahir.appendChild(newOption)
+    if (a === thisYear) {
+        newOption.selected = true
+    }
+}
+
+
+
+
+

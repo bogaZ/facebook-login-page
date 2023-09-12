@@ -137,7 +137,7 @@
               ></button>
             </div>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" style="font-size: 14px">
             <div class="d-flex">
               <input
                 id="firstName"
@@ -172,32 +172,20 @@
               </div>
               <div class="d-flex">
                 <select
-                  class="form-select me-1"
+                  id="tanggal-lahir"
+                  class="form-select me-1 my-form-select"
                   aria-label="Large select example"
-                >
-                  <option selected>11</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                ></select>
                 <select
-                  class="form-select ms-1 me-1"
+                  id="bulan-lahir"
+                  class="form-select ms-1 me-1 my-form-select"
                   aria-label="Large select example"
-                >
-                  <option selected>Sep</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                ></select>
                 <select
-                  class="form-select ms-1"
+                  id="tahun-lahir"
+                  class="form-select ms-1 my-form-select"
                   aria-label="Large select example"
-                >
-                  <option selected>2022</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                ></select>
               </div>
             </div>
             <div>
@@ -205,7 +193,10 @@
                 <div class="my-label">Jenis Kelamin</div>
                 <i class="fas fa-question-circle ms-1 p-0 icon-question"></i>
               </div>
-              <div class="d-flex justify-content-center">
+              <div
+                class="d-flex justify-content-center"
+                style="font-size: 14px"
+              >
                 <label for="perempuan" class="w-100 me-1">
                   <div
                     id="genderPerempuanButton"
@@ -228,14 +219,11 @@
                       for="perempuan"
                       >Perempuan</label
                     >
-                    <div>
-                      <input
-                        class="form-check-input border"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="perempuan"
-                      />
-                    </div>
+                    <input
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="perempuan"
+                    />
                   </div>
                 </label>
                 <label
@@ -249,11 +237,6 @@
                     <div>
                       <i class="fas fa-mars text-primary icon-gender"></i>
                     </div>
-                    <label
-                      class="w-100 form-check-label gender-label"
-                      for="pria"
-                      >Laki - laki</label
-                    >
                     <div>
                       <label
                         class="w-100 form-check-label gender-label-2"
@@ -261,15 +244,13 @@
                         >Male</label
                       >
                     </div>
+                    <label
+                      class="w-100 form-check-label gender-label"
+                      for="pria"
+                      >Laki - laki</label
+                    >
 
-                    <div>
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="pria"
-                      />
-                    </div>
+                    <input type="radio" name="flexRadioDefault" id="pria" />
                   </div>
                 </label>
                 <div
@@ -282,16 +263,39 @@
                     >Khusus</label
                   >
 
-                  <div>
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="khusus"
-                    />
-                  </div>
+                  <input type="radio" name="flexRadioDefault" id="khusus" />
                 </div>
               </div>
+            </div>
+            <div id="opsional" style="display: none">
+              <select
+                aria-label="Pilih kata ganti Anda"
+                class="form-select mt-2 form-opsional"
+                aria-label="Large select example"
+              >
+                <option selected="1" value="" disabled="1">
+                  Pilih kata ganti Anda
+                </option>
+                <option value="1">
+                  Perempuan: "Ucapkan selamat ulang tahun untuknya!"
+                </option>
+                <option value="2">
+                  Laki-laki: "Ucapkan selamat ulang tahun untuknya!"
+                </option>
+                <option value="6">
+                  Netral: "Ucapkan selamat ulang tahun untuknya!"
+                </option>
+              </select>
+              <div class="my-label text-secondary mt-1">
+                Kata ganti Anda bisa dilihat oleh semua orang.
+              </div>
+              <input
+                style="font-size: 14px"
+                id="opsional"
+                type="text"
+                class="form-control mt-2 my-form-control"
+                placeholder="Jenis Kelamin (opsional)"
+              />
             </div>
             <div style="font-size: 12px" class="text-secondary">
               <p class="mt-3 mb-0">
