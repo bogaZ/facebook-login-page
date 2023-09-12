@@ -15,6 +15,10 @@ body {
     text-decoration: none;
 }
 
+.icon-gender{
+    display: none;
+}
+
 .text-content-register:hover{
     text-decoration: underline;
 }
@@ -149,6 +153,10 @@ body {
     }
 }
 
+.gender-label-2{
+    display: none;
+}
+
 @media (max-width: 576px) {
     .my-container-2 {
         padding-left: 20px;
@@ -163,4 +171,19 @@ body {
     .my-container-2{
         margin-top: 30px;
     }
+
+    .icon-gender{
+        display: block;
+    }
+    .gender-label{
+        display: none;
+    }
+    .gender-label-2{
+        display: block;
+        font-size: 12px;
+    }
+    .label-khusus{
+        font-size: 12px;
+    }
+    
 }

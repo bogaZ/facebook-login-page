@@ -206,31 +206,80 @@
                 <i class="fas fa-question-circle ms-1 p-0 icon-question"></i>
               </div>
               <div class="d-flex justify-content-center">
-                <div
-                  id="genderPerempuanButton"
-                  class="bg-white d-flex w-100 justify-content-between align-items-center me-1 rounded-2 border gender p-2"
-                  data-toggle="radio-control"
-                  data-target="perempuan"
-                >
-                  <label class="w-100 form-check-label" for="perempuan"
-                    >Perempuan</label
+                <label for="perempuan" class="w-100 me-1">
+                  <div
+                    id="genderPerempuanButton"
+                    class="bg-white d-flex w-100 justify-content-between align-items-center me-1 rounded-2 border gender p-2"
+                    data-toggle="radio-control"
+                    data-target="perempuan"
                   >
-
-                  <div>
-                    <input
-                      class="form-check-input border"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="perempuan"
-                    />
+                    <div>
+                      <i class="fas fa-venus text-danger icon-gender"></i>
+                    </div>
+                    <div>
+                      <label
+                        class="w-100 form-check-label gender-label-2"
+                        for="perempuan"
+                        >Female</label
+                      >
+                    </div>
+                    <label
+                      class="w-100 form-check-label gender-label"
+                      for="perempuan"
+                      >Perempuan</label
+                    >
+                    <div>
+                      <input
+                        class="form-check-input border"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="perempuan"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="bg-white w-100 ms-1 me-1 rounded-2 border p-2 justify-content-between align-items-center d-flex gender"
-                  style="max-width: 130px"
+                </label>
+                <label
+                  for="pria"
+                  class="w-100 ms-1 me-1"
+                  style="max-width: 120px"
                 >
-                  <label class="w-100 form-check-label" for="pria"
-                    >Laki - laki</label
+                  <div
+                    class="bg-white w-100 rounded-2 border p-2 justify-content-between align-items-center d-flex gender"
+                  >
+                    <div>
+                      <i class="fas fa-mars text-primary icon-gender"></i>
+                    </div>
+                    <label
+                      class="w-100 form-check-label gender-label"
+                      for="pria"
+                      >Laki - laki</label
+                    >
+                    <div>
+                      <label
+                        class="w-100 form-check-label gender-label-2"
+                        for="pria"
+                        >Male</label
+                      >
+                    </div>
+
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="pria"
+                      />
+                    </div>
+                  </div>
+                </label>
+                <div
+                  class="bg-white w-100 ms-1 rounded-2 border p-2 justify-content-between align-items-center d-flex gender"
+                  style="max-width: 95px"
+                >
+                  <label
+                    class="w-100 form-check-label label-khusus"
+                    for="khusus"
+                    >Khusus</label
                   >
 
                   <div>
@@ -238,23 +287,9 @@
                       class="form-check-input"
                       type="radio"
                       name="flexRadioDefault"
-                      id="pria"
+                      id="khusus"
                     />
                   </div>
-                </div>
-                <div
-                  class="bg-white w-100 ms-1 rounded-2 border p-2 d-flex justify-content-between align-content-center gender"
-                  style="max-width: 130px"
-                >
-                  <label class="w-100 form-check-label" for="khusus"
-                    >Khusus</label
-                  >
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="khusus"
-                  />
                 </div>
               </div>
             </div>
