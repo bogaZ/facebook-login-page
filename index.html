@@ -24,7 +24,7 @@
       >
         <div class="row my-container-2">
           <div
-            class="col-md-7 mt-5 d-flex align-items-start justify-content-center"
+            class="col-md-6 mt-5 d-flex align-items-start justify-content-center"
           >
             <div class="w-100">
               <img class="img-fb img-fluid" src="dF5SId3UHWd.svg" alt="" />
@@ -34,9 +34,11 @@
               </p>
             </div>
           </div>
-          <div class="col-md-5 d-flex justify-content-center my-container-3">
+          <div class="col-md-6 d-flex justify-content-end my-container-3">
             <div class="d-flex flex-column w-100">
-              <div class="d-flex justify-content-center w-100">
+              <div
+                class="d-flex justify-content-center justify-content-md-end w-100"
+              >
                 <div class="bg-white shadow p-3 mb-4 rounded form-login">
                   <form>
                     <div class="mb-3">
@@ -85,11 +87,15 @@
                   </form>
                 </div>
               </div>
-              <div class="text-center button-text">
-                <p>
-                  <a class="button-text-link" href="#"><b>Buat Halaman</b> </a>
-                  untuk selebriti, merek, atau bisnis.
-                </p>
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <div class="text-center button-text w-100">
+                  <p>
+                    <a class="button-text-link" href="#"
+                      ><b>Buat Halaman</b>
+                    </a>
+                    untuk selebriti, merek, atau bisnis.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -105,27 +111,64 @@
       aria-labelledby="register"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div
+        class="modal-dialog shadow rounded-5"
+        style="font-family: Arial, Helvetica, sans-serif"
+      >
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="register">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+          <div class="modal-header d-flex align-items-lg-start">
+            <div class="row" style="margin-bottom: -20px">
+              <h1 class="modal-title fs-2" id="register">
+                <b>Daftar</b>
+              </h1>
+              <p class="text-secondary">Ini cepat dan mudah.</p>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
+          <div class="modal-body">
+            <div class="d-flex">
+              <input
+                id="firstName"
+                type="text"
+                class="form-control me-1 my-form-control"
+                placeholder="Nama depan"
+                autofocus
+              />
+              <input
+                id="endName"
+                type="text"
+                class="form-control ms-1 my-form-control"
+                placeholder="Nama belakang"
+              />
+            </div>
+            <input
+              id="emailInput"
+              type="text"
+              class="form-control mt-2 my-form-control"
+              placeholder="Nomor seluler atau email"
+            />
+            <input
+              id="password"
+              type="password"
+              class="form-control mt-2 my-form-control"
+              placeholder="Kata sandi baru"
+            />
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
             <button
               type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
+              class="btn btn-primary border-0 btn-green pt-1 pb-1 btn-sm w-100"
+              style="max-width: 200px"
             >
-              Close
+              <b>Daftar</b>
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
